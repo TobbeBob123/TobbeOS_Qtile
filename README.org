@@ -4,7 +4,7 @@
 
 * Intro
 Hei og velkommen til TobbeOS. Dette er min fulle Xmonad desktop med shell og programmer og xmobar osv.
-se for bilde. [[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]]
+se for bilde [[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]].
 Jeg anbefaler å kjøre fjernPakker.sh. Dette er helt nødvendig i EndeavourOS.
 
 * IF
