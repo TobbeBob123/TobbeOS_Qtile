@@ -4,8 +4,8 @@
 
 * Intro
 Hei og velkommen til TobbeOS. Dette er min fulle Xmonad desktop med shell og programmer og xmobar osv.
-se for bilde. [[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]]
-
+se for bilde. [[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot
+]]
 * IF
 her gir jeg brukeren en mulighet til å avslutte scriptet hvis brukeren har ombestemt seg med if statment + vil ta bakup av xinit filen
 #+begin_src sh 
@@ -74,6 +74,7 @@ Her fjerner jeg mapper og filer som kan føre til error
 Her dras alle mine configs fra github
 #+begin_src sh
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
+                 git clone https://github.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://github.com/TobbeBob123/xmobar.git ~/.config/xmobar && \
                  git clone https://github.com/TobbeBob123/kitty.git ~/.config/kitty && \
                  git clone https://github.com/TobbeBob123/Bakgrunner.git ~/Bakgrunner && \

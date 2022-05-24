@@ -47,6 +47,7 @@ else
 		 sudo rm -rf /usr/share/themes/Dracula && \
 
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
+                 git clone https://github.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://github.com/TobbeBob123/xmobar.git ~/.config/xmobar && \
                  git clone https://github.com/TobbeBob123/kitty.git ~/.config/kitty && \
                  git clone https://github.com/TobbeBob123/Bakgrunner.git ~/Bakgrunner && \
