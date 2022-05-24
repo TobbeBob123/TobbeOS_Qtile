@@ -39,7 +39,6 @@ Oppgraderer og syncer databasene og installerer grunn pakkene for scriptet
 * Fjerner errors
 Her fjerner jeg mapper og filer som kan føre til error
 #+begin_src sh
-                 rm -rf ~/.config/fish && \
                  rm -f ~/.fehbg && \
                  rm -rf ~/.config/kak && \
                  rm -rf ~/omf && \
@@ -66,8 +65,10 @@ Her fjerner jeg mapper og filer som kan føre til error
                  sudo rm -rf /etc/systemd/system/sleep.target.wants && \
                  rm -rf ~/.xinitrc && \
                  rm -rf ~/.config/vifm && \
+                 rm -rf ~/Script && \
 		 rm -rf ~/.config/rofi && \
 		 rm -rf ~/.config/nvim && \
+       rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
 #+end_src
 
@@ -95,17 +96,17 @@ Her dras alle mine configs fra github
                  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
                 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' && \
                  git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d && \
-                 ~/.emacs.d/bin/doom install
-                 rm -rf ~/.doom.d
-                 git clone https://github.com/TobbeBob123/doom_emacs.git ~/.doom.d
-                 ~/.emacs.d/bin/doom sync
+                 ~/.emacs.d/bin/doom install && \
+                 rm -rf ~/.doom.d && \
+                 git clone https://github.com/TobbeBob123/doom_emacs.git ~/.doom.d && \
+                 ~/.emacs.d/bin/doom sync && \
+                 rm -rf ~/.config/fish && \
                  git clone https://github.com/TobbeBob123/Fish.git ~/.config/fish && \
                  chsh -s /usr/bin/fish && \
                  git clone https://github.com/TobbeBob123/starship.git ~/starship && \
                  mv ~/starship/starship.toml ~/.config/starship.toml && \
                  rm -rf ~/starship && \
-                 git clone https://github.com/TobbeBob123/lightdm.git 
-                 ~/lightdm && \
+                 git clone https://github.com/TobbeBob123/lightdm.git ~/lightdm && \
 #+end_src
 ** Lightdm
 Her aktivererer jeg lightdm. Min login manager.
