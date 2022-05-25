@@ -47,6 +47,8 @@ else
        rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
 
+mkdir ~/org
+
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
                  git clone https://github.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://github.com/TobbeBob123/xmobar.git ~/.config/xmobar && \

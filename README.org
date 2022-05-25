@@ -72,6 +72,12 @@ Her fjerner jeg mapper og filer som kan føre til error
 		 sudo rm -rf /usr/share/themes/Dracula && \
 #+end_src
 
+* Org dir
+Her lager jeg org-dir for emacs
+#+begin_src sh
+mkdir ~/org
+#+end_src
+
 * Git clone
 Her dras alle mine configs fra github
 #+begin_src sh
