@@ -81,14 +81,13 @@ mkdir ~/org
                  mv ~/starship/starship.toml ~/.config/starship.toml && \
                  rm -rf ~/starship && \
                  git clone https://github.com/TobbeBob123/lightdm.git ~/lightdm && \
-
-		 sudo systemctl enable lightdm &&
-                 sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
-
-                 sudo mv ~/lightdm /etc/lightdm && \
                  sudo mv ~/.config/gtk-3.0/Dracula /usr/share/themes/Dracula && \
                  git clone https://github.com/TobbeBob123/vifm.git ~/.config/vifm && \
                  git clone https://github.com/TobbeBob123/Rofi.git ~/.config/rofi && \
+
+		 sudo systemctl enable lightdm && \
+                 sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
+                 sudo mv ~/lightdm /etc/lightdm && \
 
                  touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png" > ~/.fehbg && \
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \

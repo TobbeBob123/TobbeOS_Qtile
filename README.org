@@ -2,13 +2,25 @@
 #+AUTHOR: Tobias Os Finsbøl
 #+PROPERTY: header-args :tangle TobbeOS.sh
 
-* Intro
-Hei og velkommen til TobbeOS. Dette er min fulle Xmonad desktop med shell og programmer og xmobar osv.
-se for bilde [[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]].
-Jeg anbefaler å kjøre fjernPakker.sh. Dette er helt nødvendig i EndeavourOS.
+* Content
+- [[#Intro][Intro]]
+- [[#Start][Start]]
+- [[#Doas][Doas]]
+- [[#Installing_programs][Installing programs]] 
+- [[#Removing_errors][Removing errors]]
+- [[#Org][Org]]
+- [[#Git][Git]]
+- [[#Lightdm][Lightdm]]
+- [[#Background_and_the_shell][Background and the shell]]
+- [[#Finish_the_Script][Finish the Script]]
 
-* IF
-her gir jeg brukeren en mulighet til å avslutte scriptet hvis brukeren har ombestemt seg med if statment + vil ta bakup av xinit filen
+* Intro
+Hei and welcome to TobbeOS. This is my full Xmonad desktop and shell and program I use every day and xmobar, etc. see screenshot to see my rice (TobbeOS).
+[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]]
+I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
+
+* Start
+Here give I the user the choice of quit the install or continue.
 #+begin_src sh 
 echo "Du er i ferd med å overskrive xinit filen (.xinitrc). Vi anbefaler å ta bakup av innholdet av xinit filen."
 echo "Du burde kjøre fjernPakker.sh før du går videre"
@@ -21,14 +33,14 @@ else
 #+end_src
 
 * Doas
-Setter doas istedenfor sudo
+Here do I set doas, to use doas as sudo.
 #+begin_src sh 
     touch ~/doas.conf && echo permit :wheel > ~/doas.conf && sudo chown root:root ~/doas.conf && \
     sudo mv ~/doas.conf /etc/doas.conf && \
 #+end_src
 
-* Installer pakker
-Oppgraderer og syncer databasene og installerer grunn pakkene for scriptet
+* Installing_programs
+Oppgrade and sync datebases and installing programs for TobbeOS.
 #+begin_src sh 
     sudo pacman -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa && \
     sudo rm -rf yay-git ~/yay-git && \
@@ -36,8 +48,8 @@ Oppgraderer og syncer databasene og installerer grunn pakkene for scriptet
     yay -S htop kitty geary gnome-keyring ispell aspell aspell-en aspell-nb hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet paru-bin adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice librewolf-bin signal-desktop teams-for-linux pulseaudio picom pcmanfm emacs ripgrep && \
 #+end_src
 
-* Fjerner errors
-Her fjerner jeg mapper og filer som kan føre til error
+* Removing_errors
+remove dir and files who can lead to errors. 
 #+begin_src sh
                  rm -f ~/.fehbg && \
                  rm -rf ~/.config/kak && \
@@ -72,14 +84,14 @@ Her fjerner jeg mapper og filer som kan føre til error
 		 sudo rm -rf /usr/share/themes/Dracula && \
 #+end_src
 
-* Org dir
-Her lager jeg org-dir for emacs
+* Org
+Make org-dir for emacs. 
 #+begin_src sh
 mkdir ~/org
 #+end_src
 
-* Git clone
-Her dras alle mine configs fra github
+* Git
+Adding my configs to everything. Xmonad, Xmobar and emacs etc.
 #+begin_src sh
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
                  git clone https://github.com/TobbeBob123/Script.git ~/Script && \
@@ -113,31 +125,28 @@ Her dras alle mine configs fra github
                  mv ~/starship/starship.toml ~/.config/starship.toml && \
                  rm -rf ~/starship && \
                  git clone https://github.com/TobbeBob123/lightdm.git ~/lightdm && \
-#+end_src
-** Lightdm
-Her aktivererer jeg lightdm. Min login manager.
-#+begin_src sh 
-		 sudo systemctl enable lightdm &&
-                 sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
-#+end_src
-** fortsettelse på git clone
-#+begin_src sh
-                 sudo mv ~/lightdm /etc/lightdm && \
                  sudo mv ~/.config/gtk-3.0/Dracula /usr/share/themes/Dracula && \
                  git clone https://github.com/TobbeBob123/vifm.git ~/.config/vifm && \
                  git clone https://github.com/TobbeBob123/Rofi.git ~/.config/rofi && \
 #+end_src
+* Lightdm
+Here do I set Lightdm for my login manager.
+#+begin_src sh 
+		 sudo systemctl enable lightdm && \
+                 sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
+                 sudo mv ~/lightdm /etc/lightdm && \
+#+end_src
 
-* Bakgrunn og fish
-Her setter jeg bakgrunn og fish som shell
+* Background_and_the_shell
+Set bakground and Fish as shell.
 #+begin_src sh
                  touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png" > ~/.fehbg && \
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
                  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 #+end_src
-* avslutt
-Avslutter hele if statement
+* Finish_the_Script
+Finished up if statement.
 #+begin_src sh 
 fi
 #+end_src
