@@ -22,9 +22,9 @@ I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS.
 * Start
 Here give I the user the choice of quit the install or continue.
 #+begin_src sh 
-echo "Du er i ferd med å overskrive xinit filen (.xinitrc). Vi anbefaler å ta bakup av innholdet av xinit filen."
-echo "Du burde kjøre fjernPakker.sh før du går videre"
-echo -n  "Vil du fortsette? [Y/n]: "
+echo "This will overrides the xinit file (.xinitrc). Take backup."
+echo "You should run fjernPakker.sh before you continue."
+echo -n  "Will you continue? [Y/n]: "
 read -r svar
 if [[ $svar == "n" ]] || [[ $svar == "N" ]]
 then
