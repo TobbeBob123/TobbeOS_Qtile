@@ -46,13 +46,13 @@ else
 		 rm -rf ~/.config/nvim && \
        rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
+                 rm -rf ~/.librewolf && \
 
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
 mkdir ~/org && \
 
-rm -rf ~/.librewolf && \
 git clone https://github.com/TobbeBob123/librewolf_profile.git ~/.librewolf && \
 
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \

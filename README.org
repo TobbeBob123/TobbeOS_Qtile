@@ -85,6 +85,7 @@ remove dir and files who can lead to errors.
 		 rm -rf ~/.config/nvim && \
        rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
+                 rm -rf ~/.librewolf && \
 #+end_src
 
 * Bluetooth
@@ -103,7 +104,6 @@ mkdir ~/org && \
 * Librewolf_Profile
 Adding all my settings for Librewolf
 #+begin_src sh
-rm -rf ~/.librewolf && \
 git clone https://github.com/TobbeBob123/librewolf_profile.git ~/.librewolf && \ 
 #+end_src
 
