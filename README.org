@@ -10,6 +10,7 @@
 - [[#Removing_errors][Removing errors]]
 - [[#Bluetooth][Bluetooth]]
 - [[#Org][Org]]
+- [[#Librewolf_Profile][Librewolf_profile]]
 - [[#Git][Git]]
 - [[#Lightdm][Lightdm]]
 - [[#Background_and_the_shell][Background and the shell]]
@@ -96,6 +97,13 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
 Make org-dir for emacs. 
 #+begin_src sh
 mkdir ~/org && \
+#+end_src
+
+* Librewolf_Profile
+Adding all my settings for Librewolf
+#+begin_src sh
+rm -rf ~/.librewolf && \
+git clone https://github.com/TobbeBob123/librewolf_profile.git ~/.librewolf && \ 
 #+end_src
 
 * Git

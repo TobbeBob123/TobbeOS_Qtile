@@ -52,6 +52,9 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
 
 mkdir ~/org && \
 
+rm -rf ~/.librewolf && \
+git clone https://github.com/TobbeBob123/librewolf_profile.git ~/.librewolf && \
+
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
                  git clone https://github.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://github.com/TobbeBob123/xmobar.git ~/.config/xmobar && \
