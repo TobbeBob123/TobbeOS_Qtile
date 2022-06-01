@@ -18,7 +18,8 @@
 
 * Intro
 Hei and welcome to TobbeOS. This is my full Xmonad desktop and shell and program I use every day and xmobar, etc. see screenshot to see my rice (TobbeOS).
-[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot]]
+[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true][screenshot.]]
+
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
 
 * Start
