@@ -47,6 +47,7 @@ else
        rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/.librewolf && \
+                 rm -rf ~/org \
 
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \

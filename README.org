@@ -85,6 +85,7 @@ remove dir and files who can lead to errors.
        rm -rf ~/.emacs.d && \ 
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/.librewolf && \
+                 rm -rf ~/org \
 #+end_src
 
 * Bluetooth
