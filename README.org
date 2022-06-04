@@ -23,7 +23,6 @@ Hei and welcome to TobbeOS.
 
 ** What is TobbeOS?
 TobbeOS is a full Xmonad desktop with fish shell and kitty as terminal etc.
-
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
 
 PS: You can see TobbeOS's keybindings with Mod4+s. Mod4 is Windows key.
