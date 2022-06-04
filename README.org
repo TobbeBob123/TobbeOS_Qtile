@@ -18,7 +18,7 @@
 
 * Intro
 
-[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png]]
+[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png][TobbeOS screenshot]]
 
 Hei and welcome to TobbeOS. This is my full Xmonad desktop and shell and program I use every day and xmobar, etc. see screenshot to see my rice (TobbeOS)
 
