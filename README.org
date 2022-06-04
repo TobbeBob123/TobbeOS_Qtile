@@ -17,9 +17,10 @@
 - [[#Finish_the_Script][Finish the Script]]
 
 * Intro
-Hei and welcome to TobbeOS. This is my full Xmonad desktop and shell and program I use every day and xmobar, etc. see screenshot to see my rice (TobbeOS)
 
-![TobbeOS Screenshot](https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png?raw=true "TobbeOSscreenshot")
+[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png]]
+
+Hei and welcome to TobbeOS. This is my full Xmonad desktop and shell and program I use every day and xmobar, etc. see screenshot to see my rice (TobbeOS)
 
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
 
