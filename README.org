@@ -17,8 +17,7 @@
 - [[#Finish_the_Script][Finish the Script]]
 
 * Intro
-[[https://github.com/TobbeBob123/.xmonad/blob/master/NyTobbeOS_skjermdump.png]]
-
+[[https://github.com/TobbeBob123/TobbeOS/blob/master/TobbeOS_Screenshot.png]]
 Hei and welcome to TobbeOS.
 
 ** What is TobbeOS?
