@@ -2,7 +2,7 @@
 #+AUTHOR: Tobias Os Finsbøl
 #+PROPERTY: header-args :tangle TobbeOS.sh
 
-* Content
+* Content :toc:
 - [[#Intro][Intro]]
 - [[#Start][Start]]
 - [[#Doas][Doas]]
