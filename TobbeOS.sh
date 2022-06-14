@@ -79,8 +79,6 @@ mkdir ~/org && \
                  git clone https://github.com/TobbeBob123/doom_emacs.git ~/.doom.d && \
                  ~/.emacs.d/bin/doom sync && \
                  rm -rf ~/.config/fish && \
-                 git clone https://github.com/TobbeBob123/Fish.git ~/.config/fish && \
-                 chsh -s /usr/bin/fish && \
                  git clone https://github.com/TobbeBob123/starship.git ~/starship && \
                  mv ~/starship/starship.toml ~/.config/starship.toml && \
                  rm -rf ~/starship && \
@@ -98,6 +96,8 @@ mkdir ~/org && \
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
 
+                 git clone https://github.com/TobbeBob123/Fish.git ~/.config/fish && \
+                 chsh -s /usr/bin/fish && \
                  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 fi
