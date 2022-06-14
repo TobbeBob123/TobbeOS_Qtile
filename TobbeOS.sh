@@ -12,7 +12,7 @@ else
 
     sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa yay && \
     sudo rm -rf yay-git ~/yay-git && \
-    yay --noconfirm -S htop kitty haskell-lsp geary gnome-keyring blueman beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb mailspring hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet paru-bin adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice librewolf-bin signal-desktop pulseaudio picom pcmanfm emacs ripgrep && \
+    yay --noconfirm -S htop kitty discord haskell-lsp geary gnome-keyring blueman beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb mailspring hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet paru-bin adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice librewolf-bin signal-desktop pulseaudio picom pcmanfm emacs ripgrep && \
 
                  rm -f ~/.fehbg && \
                  rm -rf ~/.config/kak && \
@@ -52,8 +52,6 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
     rfkill unblock all && \
 
 mkdir ~/org && \
-
-git clone https://github.com/TobbeBob123/librewolf_profile.git ~/.librewolf && \
 
                  git clone https://github.com/TobbeBob123/.xmonad.git ~/.xmonad && \
                  git clone https://github.com/TobbeBob123/Script.git ~/Script && \
