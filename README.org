@@ -3,22 +3,24 @@
 #+PROPERTY: header-args :tangle TobbeOS.sh
 
 * Content :toc:
-- [[#Intro][Intro]]
-- [[#Start][Start]]
-- [[#Doas][Doas]]
-- [[#Installing_programs][Installing programs]] 
-- [[#Removing_errors][Removing errors]]
-- [[#Bluetooth][Bluetooth]]
-- [[#Org][Org]]
-- [[#Git][Git]]
-- [[#Lightdm][Lightdm]]
-- [[#Background][Background]]
-- [[#Xmonad og Xinit][Xmonad og Xinit]]
-- [[#Fish][Fish]]
-- [[#Finish_the_Script][Finish the Script]]
+
+- [[#intro][Intro]]
+  - [[#what-is-tobbeos][What is TobbeOS?]]
+- [[#start][Start]]
+- [[#doas][Doas]]
+- [[#installing_programs][Installing_programs]]
+- [[#removing_errors][Removing_errors]]
+- [[#bluetooth][Bluetooth]]
+- [[#org][Org]]
+- [[#git][Git]]
+- [[#lightdm][Lightdm]]
+- [[#background][Background]]
+- [[#xmonad-og-xinit][Xmonad og Xinit]]
+- [[#fish][Fish]]
+- [[#finish_the_script][Finish_the_Script]]
 
 * Intro
-[[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOS_Screenshot.png]]
+[[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOSPNG/TobbeOS_Screenshot.png]]
 Hei and welcome to TobbeOS.
 
 ** What is TobbeOS?
