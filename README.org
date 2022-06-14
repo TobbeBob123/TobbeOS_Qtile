@@ -12,11 +12,13 @@
 - [[#Org][Org]]
 - [[#Git][Git]]
 - [[#Lightdm][Lightdm]]
-- [[#Background_and_the_shell][Background and the shell]]
+- [[#Background][Background]]
+- [[#Xmonad og Xinit][Xmonad og Xinit]]
+- [[#Fish][Fish]]
 - [[#Finish_the_Script][Finish the Script]]
 
 * Intro
-[[https://github.com/TobbeBob123/TobbeOS/blob/master/TobbeOS_Screenshot.png]]
+[[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOS_Screenshot.png]]
 Hei and welcome to TobbeOS.
 
 ** What is TobbeOS?
@@ -46,7 +48,6 @@ Here do I set doas, to use doas as sudo.
 #+end_src
 
 * Installing_programs
-Oppgrade and sync datebases and installing programs for TobbeOS.
 #+begin_src sh 
     sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa yay && \
     sudo rm -rf yay-git ~/yay-git && \
@@ -151,14 +152,24 @@ Here do I set Lightdm for my login manager.
                  sudo mv ~/lightdm /etc/lightdm && \
 #+end_src
 
-* Background_and_the_shell
-Set bakground and Fish as shell.
+* Background
+Set bakground.
 #+begin_src sh
                  touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png" > ~/.fehbg && \
+#+end_src
+
+* Xmonad og Xinit
+#+begin_src sh
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
+#+end_src
+
+* Fish
+Set Oh-my-fish
+#+begin_src sh
                  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 #+end_src
+
 * Finish_the_Script
 Finished up if statement.
 #+begin_src sh 
