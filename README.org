@@ -3,7 +3,6 @@
 #+PROPERTY: header-args :tangle TobbeOS.sh
 
 * Content :toc:
-
 - [[#intro][Intro]]
   - [[#what-is-tobbeos][What is TobbeOS?]]
 - [[#start][Start]]
@@ -27,7 +26,7 @@ Hei and welcome to TobbeOS.
 TobbeOS is a full Xmonad desktop with fish shell and kitty as terminal etc.
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
 
-PS: You can see TobbeOS's keybindings with Mod4+s. Mod4 is Windows key.
+*PS: You can see TobbeOS's keybindings with Mod4+s. Mod4 is Windows key.*
 
 * Start
 Here give I the user the choice of quit the install or continue.
