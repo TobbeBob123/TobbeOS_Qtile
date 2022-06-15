@@ -50,6 +50,8 @@ rm -rf ~/.emacs.d &&
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
+sudo lux
+
 mkdir ~/org && \
 
 git clone https://gitlab.com/TobbeBob123/Xmonad.git ~/.xmonad && \

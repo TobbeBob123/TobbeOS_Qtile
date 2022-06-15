@@ -10,6 +10,7 @@
 - [[#installing-programs][Installing programs]]
 - [[#removing-errors][Removing errors]]
 - [[#bluetooth][Bluetooth]]
+- [[#lux][Lux]]
 - [[#org][Org]]
 - [[#git][Git]]
 - [[#lightdm][Lightdm]]
@@ -97,6 +98,12 @@ Enable bluetooth
 #+begin_src sh
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
+#+end_src
+
+* Lux
+Make lux (Screenlight) to work after reboot.
+#+begin_src sh
+sudo lux
 #+end_src
 
 * Org
