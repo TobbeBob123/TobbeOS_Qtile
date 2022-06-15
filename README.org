@@ -143,6 +143,7 @@ Adding my configs to everything. Xmonad, Xmobar and emacs etc.
                  git clone https://gitlab.com/TobbeBob123/vifm.git ~/.config/vifm && \
                  git clone https://gitlab.com/TobbeBob123/Rofi.git ~/.config/rofi && \
 #+end_src
+
 * Lightdm
 Here do I set Lightdm for my login manager.
 #+begin_src sh 
