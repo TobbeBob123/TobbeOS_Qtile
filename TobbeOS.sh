@@ -43,7 +43,7 @@ rm -f ~/.fehbg && \
           rm -rf ~/Script && \
 	  rm -rf ~/.config/rofi && \
 	  rm -rf ~/.config/nvim && \
-rm -rf ~/.emacs.d && 
+rm -rf ~/.emacs.d &&
 	  sudo rm -rf /usr/share/themes/Dracula && \
           rm -rf ~/org && \
 

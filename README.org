@@ -7,8 +7,8 @@
   - [[#what-is-tobbeos][What is TobbeOS?]]
 - [[#start][Start]]
 - [[#doas][Doas]]
-- [[#installing_programs][Installing_programs]]
-- [[#removing_errors][Removing_errors]]
+- [[#installing-programs][Installing programs]]
+- [[#removing-errors][Removing errors]]
 - [[#bluetooth][Bluetooth]]
 - [[#org][Org]]
 - [[#git][Git]]
@@ -16,7 +16,7 @@
 - [[#background][Background]]
 - [[#xmonad-og-xinit][Xmonad og Xinit]]
 - [[#fish][Fish]]
-- [[#finish_the_script][Finish_the_Script]]
+- [[#finish-the-script][Finish the Script]]
 
 * Intro
 [[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOSPNG/TobbeOS_Screenshot.png]]
@@ -48,14 +48,14 @@ Here do I set doas, to use doas as sudo.
     sudo mv ~/doas.conf /etc/doas.conf && \
 #+end_src
 
-* Installing_programs
+* Installing programs
 #+begin_src sh 
     sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa yay && \
     sudo rm -rf yay-git ~/yay-git && \
     yay -S htop kitty base-devel vim discord haskell-lsp geary gnome-keyring blueman beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb mailspring hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet paru-bin adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice librewolf-bin signal-desktop pulseaudio pulseaudio-bluetooth picom pcmanfm emacs ripgrep && \
 #+end_src
 
-* Removing_errors
+* Removing errors
 remove dir and files who can lead to errors. 
 #+begin_src sh
                  rm -f ~/.fehbg && \
@@ -87,7 +87,7 @@ remove dir and files who can lead to errors.
                  rm -rf ~/Script && \
 		 rm -rf ~/.config/rofi && \
 		 rm -rf ~/.config/nvim && \
-       rm -rf ~/.emacs.d && 
+       rm -rf ~/.emacs.d &&
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/org && \
 #+end_src
@@ -171,7 +171,7 @@ Set Oh-my-fish
                  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 #+end_src
 
-* Finish_the_Script
+* Finish the Script
 Finished up if statement.
 #+begin_src sh 
 fi
