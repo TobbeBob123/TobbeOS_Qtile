@@ -45,7 +45,6 @@ rm -f ~/.fehbg && \
 	  rm -rf ~/.config/nvim && \
 rm -rf ~/.emacs.d && 
 	  sudo rm -rf /usr/share/themes/Dracula && \
-          rm -rf ~/.librewolf && \
           rm -rf ~/org && \
 
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
