@@ -50,7 +50,7 @@ rm -rf ~/.emacs.d &&
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
-sudo lux
+sudo lux && \
 
 mkdir ~/org && \
 

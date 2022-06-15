@@ -103,7 +103,7 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
 * Lux
 Make lux (Screenlight) to work after reboot.
 #+begin_src sh
-sudo lux
+sudo lux && \
 #+end_src
 
 * Org
