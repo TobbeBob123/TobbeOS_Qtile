@@ -39,12 +39,15 @@ I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS.
 
 | Important program keys    | Description                                 |
 |---------------------------+---------------------------------------------|
-| mod + Return              | Opens terminal (Kitty)                      |
-| mod + left Shift + Return | Opens README.org for xmonad config in emacs |
+| mod + Return              | Open Emacs                                  |
+| mod + e                   | Open Terminal (Kitty)                       |
+| mod + left Shift + Return | Open README.org for xmonad config in emacs  |
 | mod + s                   | Show hotkeys                                |
 | mod + left Shift + s      | Show alias for fish shell                   |
-| mod + d                   | Opens web browser (LibreWolf)               |
+| mod + d                   | Open web browser (LibreWolf)                |
 |---------------------------+---------------------------------------------|
+
+*I use Emasc as my terminal, so I swap the Emacs hotkey and Terminal hotkey.*
 
 * Start
 Here give I the user the choice of quit the install or continue.
