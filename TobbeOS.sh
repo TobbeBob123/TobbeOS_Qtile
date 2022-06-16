@@ -1,5 +1,5 @@
 echo "This will overrides the xinit file (.xinitrc). Take backup."
-echo "You should run fjernPakker.sh before you continue."
+echo "I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS."
 echo -n  "Will you continue? [Y/n]: "
 read -r svar
 if [[ $svar == "n" ]] || [[ $svar == "N" ]]
