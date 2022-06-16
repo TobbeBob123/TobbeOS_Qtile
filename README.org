@@ -5,6 +5,7 @@
 * Content :toc:
 - [[#intro][Intro]]
   - [[#what-is-tobbeos][What is TobbeOS?]]
+  - [[#important-keys-to-know-about][Important keys to know about]]
 - [[#start][Start]]
 - [[#doas][Doas]]
 - [[#installing-programs][Installing programs]]
@@ -27,7 +28,23 @@ Hei and welcome to TobbeOS.
 TobbeOS is a full Xmonad desktop with fish shell and kitty as terminal etc.
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
 
-*PS: You can see TobbeOS's keybindings with Mod4+s. Mod4 is Windows key.*
+** Important keys to know about
+| Important keys to know | Description                                                                                                        |
+|------------------------+--------------------------------------------------------------------------------------------------------------------|
+| Mod                    | Super key (Windows key)                                                                                            |
+| controlMask            | Ctrl                                                                                                               |
+| shiftMask              | Left shift                                                                                                         |
+| xK_?                   | keys on the keyboard. for example mod+xK_s is mod key and the letter s. This will spawn a window with keybindings. |
+|------------------------+--------------------------------------------------------------------------------------------------------------------|
+
+| Important program keys    | Description                                 |
+|---------------------------+---------------------------------------------|
+| mod + Return              | Opens terminal (Kitty)                      |
+| mod + left Shift + Return | Opens README.org for xmonad config in emacs |
+| mod + s                   | Show hotkeys                                |
+| mod + left Shift + s      | Show alias for fish shell                   |
+| mod + d                   | Opens web browser (LibreWolf)               |
+|---------------------------+---------------------------------------------|
 
 * Start
 Here give I the user the choice of quit the install or continue.
