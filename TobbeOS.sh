@@ -1,5 +1,6 @@
 echo "This Script will take long time to install everything."
 echo "This will overrides the xinit file (.xinitrc). Take backup."
+echo "Reboot your computer after the Script are done."
 echo "I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS."
 echo -n  "Will you continue? [Y/n]: "
 read -r svar
