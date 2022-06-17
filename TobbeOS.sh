@@ -12,8 +12,9 @@ else
 touch ~/doas.conf && echo permit :wheel > ~/doas.conf && sudo chown root:root ~/doas.conf && \
 sudo mv ~/doas.conf /etc/doas.conf && \
 
-sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa yay && \
+sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa && \
 sudo rm -rf yay-git ~/yay-git && \
+sudo git clone https://aur.archlinux.org/yay-git.git && cd yay-git && makepkg -si && \
 yay -S htop kitty base-devel vim discord haskell-lsp geary gnome-keyring blueman beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb mailspring hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet paru-bin adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice librewolf-bin signal-desktop pulseaudio pulseaudio-bluetooth picom pcmanfm emacs ripgrep && \
 
 rm -f ~/.fehbg && \
