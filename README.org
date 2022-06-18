@@ -45,6 +45,7 @@ I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS.
 | mod + s                   | Show hotkeys                               |
 | mod + left Shift + s      | Show alias for fish shell                  |
 | mod + left Shift + Tab    | Open web browser (LibreWolf)               |
+| mod + left Shift + q      | kill window                                |
 | mod + d                   | Rofi (Program Launcher)                    |
 
 *I use Emasc as my terminal, so I swap the Emacs hotkey and Terminal hotkey.*
