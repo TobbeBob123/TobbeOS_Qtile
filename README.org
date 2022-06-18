@@ -37,15 +37,15 @@ I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS.
 | xK_?                   | keys on the keyboard. for example mod+xK_s is mod key and the letter s. This will spawn a window with keybindings. |
 |------------------------+--------------------------------------------------------------------------------------------------------------------|
 
-| Important program keys    | Description                                 |
-|---------------------------+---------------------------------------------|
-| mod + Return              | Open Emacs                                  |
-| mod + e                   | Open Terminal (Kitty)                       |
-| mod + left Shift + Return | Open README.org for xmonad config in emacs  |
-| mod + s                   | Show hotkeys                                |
-| mod + left Shift + s      | Show alias for fish shell                   |
-| mod + d                   | Open web browser (LibreWolf)                |
-|---------------------------+---------------------------------------------|
+| Important program keys    | Description                                |
+|---------------------------+--------------------------------------------|
+| mod + Return              | Open Emacs                                 |
+| mod + e                   | Open Terminal (Kitty)                      |
+| mod + left Shift + Return | Open README.org for xmonad config in emacs |
+| mod + s                   | Show hotkeys                               |
+| mod + left Shift + s      | Show alias for fish shell                  |
+| mod + left Shift + Tab    | Open web browser (LibreWolf)               |
+| mod + d                   | Rofi (Program Launcher)                    |
 
 *I use Emasc as my terminal, so I swap the Emacs hotkey and Terminal hotkey.*
 
