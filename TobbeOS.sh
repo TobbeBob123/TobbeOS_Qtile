@@ -49,6 +49,7 @@ rm -f ~/.fehbg && \
 rm -rf ~/.emacs.d &&
 	  sudo rm -rf /usr/share/themes/Dracula && \
           rm -rf ~/org && \
+          rm -rf ~/xmenu && \
 
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
@@ -71,7 +72,6 @@ git clone https://gitlab.com/TobbeBob123/Xmonad.git ~/.xmonad && \
  git clone https://gitlab.com/TobbeBob123/Surf.git ~/.config/surf && \
  git clone https://gitlab.com/TobbeBob123/Surf-browser.git ~/surf && \
  cd ~/surf && sudo make install && \
- cd ~ && \
  git clone https://gitlab.com/TobbeBob123/dunst.git ~/.config/dunst && \
  git clone https://gitlab.com/TobbeBob123/kak.git ~/.config/kak && \
  git clone https://gitlab.com/TobbeBob123/nvim.git ~/.config/nvim && \
@@ -99,6 +99,10 @@ touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png"
 
 touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
 xmonad --recompile && \
+
+git clone https://gitlab.com/TobbeBob123/xmenu.git ~/xmenu && \
+cd ~/xmenu && \
+sudo make install && \
 
 git clone https://gitlab.com/TobbeBob123/Fish.git ~/.config/fish && \
 chsh -s /usr/bin/fish && \

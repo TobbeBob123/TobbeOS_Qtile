@@ -17,6 +17,7 @@
 - [[#lightdm][Lightdm]]
 - [[#background][Background]]
 - [[#xmonad-og-xinit][Xmonad og Xinit]]
+- [[#xmenu][Xmenu]]
 - [[#fish][Fish]]
 - [[#finish-the-script][Finish the Script]]
 
@@ -117,6 +118,7 @@ remove dir and files who can lead to errors.
        rm -rf ~/.emacs.d &&
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/org && \
+                 rm -rf ~/xmenu && \
 #+end_src
 
 * Bluetooth
@@ -155,7 +157,6 @@ Adding my configs to everything. Xmonad, Xmobar and emacs etc.
                  git clone https://gitlab.com/TobbeBob123/Surf.git ~/.config/surf && \
                  git clone https://gitlab.com/TobbeBob123/Surf-browser.git ~/surf && \
                  cd ~/surf && sudo make install && \
-		 cd ~ && \
                  git clone https://gitlab.com/TobbeBob123/dunst.git ~/.config/dunst && \
                  git clone https://gitlab.com/TobbeBob123/kak.git ~/.config/kak && \
                  git clone https://gitlab.com/TobbeBob123/nvim.git ~/.config/nvim && \
@@ -194,6 +195,14 @@ Set bakground.
 #+begin_src sh
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
+#+end_src
+
+* Xmenu
+set config xmenu and build it from source
+#+begin_src sh
+git clone https://gitlab.com/TobbeBob123/xmenu.git ~/xmenu && \
+cd ~/xmenu && \
+sudo make install && \
 #+end_src
 
 * Fish
