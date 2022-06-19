@@ -186,7 +186,7 @@ Here do I set Lightdm for my login manager.
 #+end_src
 
 * Background
-Set bakground.
+Set background.
 #+begin_src sh
                  touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png" > ~/.fehbg && \
 #+end_src
@@ -198,7 +198,7 @@ Set bakground.
 #+end_src
 
 * Xmenu
-set config xmenu and build it from source
+set config xmenu and build it from source. You can access xmenu with just a right mouseclick on the TobbeOS icon in the bar.
 #+begin_src sh
 git clone https://gitlab.com/TobbeBob123/xmenu.git ~/xmenu && \
 cd ~/xmenu && \
