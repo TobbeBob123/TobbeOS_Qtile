@@ -86,6 +86,7 @@ Here do I set doas, to use doas as sudo.
 
 * Screenshot (Make Pictures dir)
 #+begin_src sh
+rm -rf ~/Pictures && \
 mkdir ~/Pictures && \
 #+end_src
 
