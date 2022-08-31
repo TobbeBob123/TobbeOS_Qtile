@@ -95,7 +95,7 @@ mkdir ~/org && \
                  sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
                  sudo mv ~/lightdm /etc/lightdm && \
 
-                 touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/Arch_Dracula.png" > ~/.fehbg && \
+                 touch ~/.fehbg && echo "feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS.png" > ~/.fehbg && \
 
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
