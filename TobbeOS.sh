@@ -94,6 +94,8 @@ mkdir ~/org && \
                  git clone https://gitlab.com/TobbeBob123/vifm.git ~/.config/vifm && \
                  git clone https://gitlab.com/TobbeBob123/Rofi.git ~/.config/rofi && \
 
+git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
+
 		 sudo systemctl enable lightdm && \
                  sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
                  sudo mv ~/lightdm /etc/lightdm && \
