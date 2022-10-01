@@ -57,9 +57,11 @@ mkdir ~/Pictures && \
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
+sudo rm -rf /usr/lib/systemd/system/scripts/ && \
+sudo rm -f /usr/lib/systemd/system/LightOn.service && \
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
 sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/LightOn.sh /usr/lib/systemd/system/scripts/lightOn.sh && \
+sudo mv ~/Script/lightsOn.sh /usr/lib/systemd/system/scripts/lightsOn.sh && \
 sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
 sudo systemctl daemon-reload && \
 sudo systemctl enable LightOn.service && \
@@ -102,6 +104,7 @@ mkdir ~/org && \
                  git clone https://gitlab.com/TobbeBob123/vifm.git ~/.config/vifm && \
                  git clone https://gitlab.com/TobbeBob123/Rofi.git ~/.config/rofi && \
 
+rm -rf ~/Sound && \
 git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
 
 		 sudo systemctl enable lightdm && \

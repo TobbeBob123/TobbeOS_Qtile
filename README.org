@@ -15,7 +15,7 @@
 - [[#lightson][LightsOn]]
 - [[#lux][Lux]]
 - [[#org][Org]]
-- [[#git][Git]]
+- [[#base-install][Base Install]]
 - [[#system-sound][System sound]]
 - [[#lightdm][Lightdm]]
 - [[#background][Background]]
@@ -138,9 +138,11 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
 * LightsOn
 LightOn is a script who let your PC be on when watching videos. Only on firefox
 #+begin_src sh
+sudo rm -rf /usr/lib/systemd/system/scripts/ && \
+sudo rm -f /usr/lib/systemd/system/LightOn.service && \
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
 sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/LightOn.sh /usr/lib/systemd/system/scripts/lightOn.sh && \
+sudo mv ~/Script/lightsOn.sh /usr/lib/systemd/system/scripts/lightsOn.sh && \
 sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
 sudo systemctl daemon-reload && \
 sudo systemctl enable LightOn.service && \
@@ -160,7 +162,7 @@ Make org-dir for emacs.
 mkdir ~/org && \
 #+end_src
 
-* Git
+* Base Install
 Adding my configs to everything. Xmonad, Xmobar and emacs etc.
 #+begin_src sh
                  git clone https://gitlab.com/TobbeBob123/Xmonad.git ~/.xmonad && \
@@ -198,6 +200,7 @@ Adding my configs to everything. Xmonad, Xmobar and emacs etc.
 
 * System sound
 #+begin_src sh
+rm -rf ~/Sound && \
 git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
 #+end_src
 
