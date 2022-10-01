@@ -57,12 +57,20 @@ mkdir ~/Pictures && \
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
+git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
+sudo mkdir /usr/lib/systemd/system/scripts/ && \
+sudo mv ~/Script/LightOn.sh /usr/lib/systemd/system/scripts/lightOn.sh && \
+sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
+sudo systemctl daemon-reload && \
+sudo systemctl enable LightOn.service && \
+sudo systemctl start LightOn.service && \
+cd && \
+
 sudo lux && \
 
 mkdir ~/org && \
 
                  git clone https://gitlab.com/TobbeBob123/Xmonad.git ~/.xmonad && \
-                 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://gitlab.com/TobbeBob123/xmobar.git ~/.config/xmobar && \
                  git clone https://gitlab.com/TobbeBob123/kitty.git ~/.config/kitty && \
                  git clone https://gitlab.com/TobbeBob123/Bakgrunner.git ~/Bakgrunner && \

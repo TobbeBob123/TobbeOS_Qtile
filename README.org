@@ -12,6 +12,7 @@
 - [[#screenshot-make-pictures-dir][Screenshot (Make Pictures dir)]]
 - [[#removing-errors][Removing errors]]
 - [[#bluetooth][Bluetooth]]
+- [[#lightson][LightsOn]]
 - [[#lux][Lux]]
 - [[#org][Org]]
 - [[#git][Git]]
@@ -67,8 +68,6 @@ then
     exit
 else
 #+end_src
-
-#+RESULTS:
 
 * Doas
 Here do I set doas, to use doas as sudo.
@@ -136,6 +135,19 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
     rfkill unblock all && \
 #+end_src
 
+* LightsOn
+LightOn is a script who let your PC be on when watching videos. Only on firefox
+#+begin_src sh
+git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
+sudo mkdir /usr/lib/systemd/system/scripts/ && \
+sudo mv ~/Script/LightOn.sh /usr/lib/systemd/system/scripts/lightOn.sh && \
+sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
+sudo systemctl daemon-reload && \
+sudo systemctl enable LightOn.service && \
+sudo systemctl start LightOn.service && \
+cd && \
+#+end_src
+
 * Lux
 Make lux (Screenlight) to work after reboot.
 #+begin_src sh
@@ -152,7 +164,6 @@ mkdir ~/org && \
 Adding my configs to everything. Xmonad, Xmobar and emacs etc.
 #+begin_src sh
                  git clone https://gitlab.com/TobbeBob123/Xmonad.git ~/.xmonad && \
-                 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
                  git clone https://gitlab.com/TobbeBob123/xmobar.git ~/.config/xmobar && \
                  git clone https://gitlab.com/TobbeBob123/kitty.git ~/.config/kitty && \
                  git clone https://gitlab.com/TobbeBob123/Bakgrunner.git ~/Bakgrunner && \
