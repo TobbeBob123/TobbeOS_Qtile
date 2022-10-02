@@ -136,8 +136,8 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
 #+end_src
 
 * LightsOn
-This daemon let your computer stay on when watching video in your webbrowser. The script will only work with Firefox.
-This daemon are make by unhammer. Much credit to unhammer. [[https://github.com/unhammer/][unhammer's gitlab]]
+This daemon let your computer stay on when watching video in your webbrowser with help from a script. this will only work with Firefox.
+The script i use with the daemon are make by unhammer. Much credit to unhammer. [[https://github.com/unhammer/][unhammer's gitlab]]
 #+begin_src sh
 sudo rm -rf /usr/lib/systemd/system/scripts/ && \
 sudo rm -f /usr/lib/systemd/system/LightOn.service && \
