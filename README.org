@@ -12,7 +12,6 @@
 - [[#screenshot-make-pictures-dir][Screenshot (Make Pictures dir)]]
 - [[#removing-errors][Removing errors]]
 - [[#bluetooth][Bluetooth]]
-- [[#watching-video][Watching video]]
 - [[#lux][Lux]]
 - [[#org][Org]]
 - [[#base-install][Base Install]]
@@ -133,21 +132,6 @@ Enable bluetooth
 #+begin_src sh
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
-#+end_src
-
-* Watching video
-This daemon let your computer stay on when watching video in your webbrowser with help from a script. this will only work with Firefox.
-#+begin_src sh
-sudo rm -rf /usr/lib/systemd/system/scripts/ && \
-sudo rm -f /usr/lib/systemd/system/LightOn.service && \
-git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
-sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/DontLetComputerNotToSleepWhileWathingVideo.sh /usr/lib/systemd/system/scripts/DontLetComputerNotToSleepWhileWathingVideo.sh && \
-sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
-sudo systemctl daemon-reload && \
-sudo systemctl enable LightOn.service && \
-sudo systemctl start LightOn.service && \
-cd && \
 #+end_src
 
 * Lux

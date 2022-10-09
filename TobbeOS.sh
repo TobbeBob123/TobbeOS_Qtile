@@ -57,17 +57,6 @@ mkdir ~/Pictures && \
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
 
-sudo rm -rf /usr/lib/systemd/system/scripts/ && \
-sudo rm -f /usr/lib/systemd/system/LightOn.service && \
-git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
-sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/DontLetComputerNotToSleepWhileWathingVideo.sh /usr/lib/systemd/system/scripts/DontLetComputerNotToSleepWhileWathingVideo.sh && \
-sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
-sudo systemctl daemon-reload && \
-sudo systemctl enable LightOn.service && \
-sudo systemctl start LightOn.service && \
-cd && \
-
 sudo lux && \
 
 mkdir ~/org && \
