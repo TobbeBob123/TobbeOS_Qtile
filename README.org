@@ -12,7 +12,7 @@
 - [[#screenshot-make-pictures-dir][Screenshot (Make Pictures dir)]]
 - [[#removing-errors][Removing errors]]
 - [[#bluetooth][Bluetooth]]
-- [[#lightson][LightsOn]]
+- [[#watching-video][Watching video]]
 - [[#lux][Lux]]
 - [[#org][Org]]
 - [[#base-install][Base Install]]
@@ -135,15 +135,14 @@ sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.serv
     rfkill unblock all && \
 #+end_src
 
-* LightsOn
+* Watching video
 This daemon let your computer stay on when watching video in your webbrowser with help from a script. this will only work with Firefox.
-The script i use with the daemon are make by unhammer. Much credit to unhammer. [[https://github.com/unhammer/][unhammer's gitlab]]
 #+begin_src sh
 sudo rm -rf /usr/lib/systemd/system/scripts/ && \
 sudo rm -f /usr/lib/systemd/system/LightOn.service && \
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
 sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/lightsOn.sh /usr/lib/systemd/system/scripts/lightsOn.sh && \
+sudo mv ~/Script/DontLetComputerNotToSleepWhileWathingVideo.sh /usr/lib/systemd/system/scripts/DontLetComputerNotToSleepWhileWathingVideo.sh && \
 sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
 sudo systemctl daemon-reload && \
 sudo systemctl enable LightOn.service && \
@@ -216,7 +215,7 @@ Here do I set Lightdm for my login manager.
 * Background
 Set background.
 #+begin_src sh
-                 touch ~/.fehbg && echo "feh --no-fehbg --bg-scale '~/Bakgrunner/landscape.jpg'" > ~/.fehbg && \
+                 touch ~/.fehbg && echo feh --no-fehbg --bg-scale '/home/tobias/Bakgrunner/landscape.jpg'  > ~/.fehbg && \
 #+end_src
 
 * Xmonad og Xinit

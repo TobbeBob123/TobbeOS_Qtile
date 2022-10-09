@@ -61,7 +61,7 @@ sudo rm -rf /usr/lib/systemd/system/scripts/ && \
 sudo rm -f /usr/lib/systemd/system/LightOn.service && \
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
 sudo mkdir /usr/lib/systemd/system/scripts/ && \
-sudo mv ~/Script/lightsOn.sh /usr/lib/systemd/system/scripts/lightsOn.sh && \
+sudo mv ~/Script/DontLetComputerNotToSleepWhileWathingVideo.sh /usr/lib/systemd/system/scripts/DontLetComputerNotToSleepWhileWathingVideo.sh && \
 sudo mv ~/Script/LightOn.service /usr/lib/systemd/system/LightOn.service && \
 sudo systemctl daemon-reload && \
 sudo systemctl enable LightOn.service && \
@@ -111,7 +111,7 @@ git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
                  sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
                  sudo mv ~/lightdm /etc/lightdm && \
 
-                 touch ~/.fehbg && echo "feh --no-fehbg --bg-scale '~/Bakgrunner/landscape.jpg'" > ~/.fehbg && \
+                 touch ~/.fehbg && echo feh --no-fehbg --bg-scale '/home/tobias/Bakgrunner/landscape.jpg'  > ~/.fehbg && \
 
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \
