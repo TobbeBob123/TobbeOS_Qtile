@@ -215,7 +215,7 @@ Here do I set Lightdm for my login manager.
 * Background
 Set background.
 #+begin_src sh
-                 touch ~/.fehbg && echo feh --no-fehbg --bg-scale '/home/tobias/Bakgrunner/landscape.jpg'  > ~/.fehbg && \
+feh --bg-scale ~/Bakgrunner/landscape.jpg && \
 #+end_src
 
 * Xmonad og Xinit
