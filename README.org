@@ -200,7 +200,7 @@ Here do I set Lightdm for my login manager.
 * Background
 Set background.
 #+begin_src sh
-touch feh --no-fehbg --bg-scale '/home/tobias/Bakgrunner/pokemon/lucario.jpg' > ~/.fehbg && /
+touch feh --no-fehbg --bg-scale '/home/tobias/Bakgrunner/TobbeOS.png' > ~/.fehbg && /
 #+end_src
 
 * Xmonad og Xinit
