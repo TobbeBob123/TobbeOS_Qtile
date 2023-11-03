@@ -160,9 +160,6 @@ Adding my configs to everything. Xmonad, Xmobar and emacs etc.
                  cp ~/.config/gtk-3.0/settings.ini ~/.config/gtk-2.0/settings.ini && \
                  sudo mv ~/.config/gtk-3.0/gtkrc /usr/share/gtk-2.0/gtkrc && \
                  git clone https://gitlab.com/TobbeBob123/picom.git ~/.config/picom && \
-                 git clone https://gitlab.com/TobbeBob123/Surf.git ~/.config/surf && \
-                 git clone https://gitlab.com/TobbeBob123/Surf-browser.git ~/surf && \
-                 cd ~/surf && sudo make install && \
                  git clone https://gitlab.com/TobbeBob123/dunst.git ~/.config/dunst && \
                  git clone https://gitlab.com/TobbeBob123/kak.git ~/.config/kak && \
                  git clone https://gitlab.com/TobbeBob123/nvim.git ~/.config/nvim && \
