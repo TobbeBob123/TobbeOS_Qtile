@@ -47,7 +47,6 @@ mkdir ~/Pictures && \
                  sudo rm -rf /etc/systemd/system/sleep.target.wants && \
                  rm -rf ~/.xinitrc && \
                  rm -rf ~/.config/vifm && \
-                 rm -rf ~/Script && \
 		 rm -rf ~/.config/rofi && \
 		 rm -rf ~/.config/nvim && \
        rm -rf ~/.emacs.d &&
