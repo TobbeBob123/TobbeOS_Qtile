@@ -28,6 +28,9 @@
 [[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOSPNG/TobbeOS_Screenshot.png]]
 Hei and welcome to TobbeOS.
 
+*** TobbeOS colors (Dracula scheme)
+[[https://gitlab.com/TobbeBob123/Xmonad/-/raw/master/Dracula_Colors.png]]
+
 ** What is TobbeOS?
 TobbeOS is a full Xmonad desktop with fish shell and kitty as terminal etc.
 I recommend you to run fjernPakker.sh first. This is necessary for EndeavourOS. 
