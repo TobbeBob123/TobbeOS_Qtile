@@ -58,7 +58,6 @@ You can switch background with feh, TobbeOS comes with a lot of background locat
 | mod + left Shift + q      | kill window                                |
 | mod + d                   | Rofi (Program Launcher)                    |
 
-*I use Emacs as my terminal, so I swap the Emacs hotkey and Terminal hotkey.*
 
 * Start
 Here give I the user the choice of quit the install or continue.
