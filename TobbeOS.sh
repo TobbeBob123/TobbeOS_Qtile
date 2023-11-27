@@ -14,8 +14,9 @@ else
 
     sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xmonad xmonad-contrib xmobar kakoune xorg xorg-xinit fish starship lib32-mesa && \
     sudo rm -rf yay-git ~/yay-git && \
+    git clone https://aur.archlinux.org/yay.git ~/yay-git && cd ~/yay-git && makepkg -si && \
     git clone https://aur.archlinux.org/paru.git ~/yay-git && cd ~/yay-git && makepkg -si && \
-    paru -S htop kitty base-devel unzip zip bitwarden arandr brave-bin vim discord haskell-lsp geary gnome-keyring blueman flameshot beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice signal-desktop pipewire pipewire-pulse wireplumber xdg-desktop-portal-gnome picom pcmanfm emacs ripgrep lxappearance qt5ct dracula-cursors-git && \
+    yay -S htop kitty base-devel unzip zip bitwarden arandr brave-bin vim discord haskell-lsp geary gnome-keyring blueman flameshot beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet adobe-source-code-pro-fonts pacman-contrib doas xautolock nodejs-lts-fermium lxsession dmenu exa lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice signal-desktop pipewire pipewire-pulse wireplumber xdg-desktop-portal-gnome picom pcmanfm emacs ripgrep lxappearance qt5ct dracula-cursors-git && \
 
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
 rm -rf ~/Pictures && \
