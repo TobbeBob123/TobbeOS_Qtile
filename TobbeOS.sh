@@ -97,7 +97,7 @@ git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
                  sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
                  sudo mv ~/lightdm /etc/lightdm && \
 
-echo feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS.png > ~/.fehbg && \
+echo feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS_2.png > ~/.fehbg && \
 
                  touch ~/.xinitrc && echo exec xmonad > ~/.xinitrc && \
                  xmonad --recompile && \

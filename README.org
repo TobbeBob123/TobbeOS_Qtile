@@ -204,7 +204,7 @@ Here do I set Lightdm for my login manager.
 * Background
 Set background.
 #+begin_src sh
-echo feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS.png > ~/.fehbg && \
+echo feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS_2.png > ~/.fehbg && \
 #+end_src
 
 * Xmonad og Xinit
