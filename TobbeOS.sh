@@ -33,7 +33,6 @@ mkdir ~/Pictures && \
                  rm -f ~/.config/starship.toml && \
                  rm -rf ~/.config/qtile && \
                  rm -rf ~/.config/kitty && \
-                 rm -rf ~/.config/xmobar && \
                  rm -rf ~/.config/dunst && \
                  rm -rf ~/.gtkrc-2.0 && \
                  rm -rf ~/.config/gtk-3.0 && \
