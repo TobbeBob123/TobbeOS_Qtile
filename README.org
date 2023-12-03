@@ -25,7 +25,7 @@
 - [[#finish-the-script][Finish the Script]]
 
 * Intro
-[[https://gitlab.com/TobbeBob123/tobbeos/-/raw/master/TobbeOSPNG/TobbeOS_Screenshot.png]]
+[[https://gitlab.com/TobbeBob123/tobbeos_qtile/-/raw/master/TobbeOSPNG/TobbeOS_Screenshot.png]]
 Hei and welcome to TobbeOS.
 
 *** TobbeOS colors (Dracula scheme)
@@ -42,9 +42,8 @@ You can switch background with feh, TobbeOS comes with a lot of background locat
 | Important keys to know | Description                                                                                                        |
 |------------------------+--------------------------------------------------------------------------------------------------------------------|
 | Mod                    | Super key (Windows key)                                                                                            |
-| controlMask            | Ctrl                                                                                                               |
-| shiftMask              | Left shift                                                                                                         |
-| xK_?                   | keys on the keyboard. for example mod+xK_s is mod key and the letter s. This will spawn a window with keybindings. |
+| control                | Ctrl                                                                                                               |
+| shift                  | Left shift                                                                                                         |
 |------------------------+--------------------------------------------------------------------------------------------------------------------|
 
 | Important program keys    | Description                                |
