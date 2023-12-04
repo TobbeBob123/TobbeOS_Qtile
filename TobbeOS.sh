@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo "This Script will take long time to install everything."
 echo "This will overrides the xinit file (.xinitrc). Take backup."
 echo "Reboot your computer after the Script are done."
