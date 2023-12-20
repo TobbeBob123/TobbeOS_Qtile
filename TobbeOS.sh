@@ -14,7 +14,7 @@ else
     touch ~/doas.conf && echo permit :wheel > ~/doas.conf && sudo chown root:root ~/doas.conf && \
     sudo mv ~/doas.conf /etc/doas.conf && \
 
-    sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S kakoune xorg xorg-xinit fish starship lib32-mesa && \
+    sudo pacman --noconfirm -Sy && sudo pacman -Syu && sudo pacman -S xorg xorg-xinit fish starship lib32-mesa && \
     sudo rm -rf ~/yay-git && \
     sudo rm -rf ~/paru-git && \
     git clone https://aur.archlinux.org/yay.git ~/yay-git && cd ~/yay-git && makepkg -si && \
@@ -74,7 +74,6 @@ mkdir ~/org && \
                  sudo mv ~/.config/gtk-3.0/gtkrc /usr/share/gtk-2.0/gtkrc && \
                  git clone https://gitlab.com/TobbeBob123/picom.git ~/.config/picom && \
                  git clone https://gitlab.com/TobbeBob123/dunst.git ~/.config/dunst && \
-                 git clone https://gitlab.com/TobbeBob123/kak.git ~/.config/kak && \
                  git clone https://gitlab.com/TobbeBob123/nvim.git ~/.config/nvim && \
                  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
                 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' && \
