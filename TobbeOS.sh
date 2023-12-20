@@ -26,7 +26,6 @@ rm -rf ~/Pictures && \
 mkdir ~/Pictures && \
 
                  rm -f ~/.fehbg && \
-                 rm -rf ~/.config/kak && \
                  rm -rf ~/omf && \
                  rm -rf ~/oh-my-fish && \
                  rm -rf ~/starship && \

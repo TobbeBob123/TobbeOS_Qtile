@@ -103,7 +103,6 @@ mkdir ~/Pictures && \
 remove dir and files who can lead to errors. 
 #+begin_src sh
                  rm -f ~/.fehbg && \
-                 rm -rf ~/.config/kak && \
                  rm -rf ~/omf && \
                  rm -rf ~/oh-my-fish && \
                  rm -rf ~/starship && \
