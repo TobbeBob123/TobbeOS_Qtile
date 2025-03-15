@@ -19,7 +19,6 @@
 - [[#system-sound][System sound]]
 - [[#lightdm][Lightdm]]
 - [[#qtile-og-xinit][Qtile og Xinit]]
-- [[#xmenu][Xmenu]]
 - [[#fish][Fish]]
 - [[#finish-the-script][Finish the Script]]
 
@@ -130,7 +129,6 @@ remove dir and files who can lead to errors.
        rm -rf ~/.emacs.d &&
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/org && \
-                 rm -rf ~/xmenu && \
 #+end_src
 
 * Bluetooth
@@ -201,14 +199,6 @@ Here do I set Lightdm for my login manager.
 #+begin_src sh
                  touch ~/.xinitrc && echo exec qtile > ~/.xinitrc && \
                  python -m py_compile ~/.config/qtile/config.py && \
-#+end_src
-
-* Xmenu
-set config xmenu and build it from source. You can access xmenu with just a right mouseclick on the TobbeOS icon in the bar.
-#+begin_src sh
-git clone https://gitlab.com/TobbeBob123/xmenu.git ~/xmenu && \
-cd ~/xmenu && \
-sudo make install && \
 #+end_src
 
 * Fish

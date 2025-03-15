@@ -54,7 +54,6 @@ mkdir ~/Pictures && \
        rm -rf ~/.emacs.d &&
 		 sudo rm -rf /usr/share/themes/Dracula && \
                  rm -rf ~/org && \
-                 rm -rf ~/xmenu && \
 
 sudo systemctl enable bluetooth.service && sudo systemctl restart bluetooth.service && \
     rfkill unblock all && \
@@ -99,10 +98,6 @@ git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
 
                  touch ~/.xinitrc && echo exec qtile > ~/.xinitrc && \
                  python -m py_compile ~/.config/qtile/config.py && \
-
-git clone https://gitlab.com/TobbeBob123/xmenu.git ~/xmenu && \
-cd ~/xmenu && \
-sudo make install && \
 
                  git clone https://gitlab.com/TobbeBob123/Fish.git ~/.config/fish && \
                  chsh -s /usr/bin/fish && \
