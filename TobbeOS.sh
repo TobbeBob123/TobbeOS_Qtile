@@ -18,7 +18,7 @@ else
     sudo rm -rf ~/paru-git && \
     git clone https://aur.archlinux.org/yay.git ~/yay-git && cd ~/yay-git && makepkg -si && \
     git clone https://aur.archlinux.org/paru.git ~/paru-git && cd ~/paru-git && makepkg -si && \
-    yay -S alsa-utils qtile qtile-extras-git python-psutil htop kitty gnome-keyring base-devel unzip zip bitwarden arandr zen-browser-bin vim discord blueman flameshot beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb hunspell rofi ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet adobe-source-code-pro-fonts pacman-contrib doas xautolock lxsession eza lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker zip feh scrot dunst pavucontrol nm-connection-editor neovim libreoffice signal-desktop pipewire pipewire-pulse wireplumber picom pcmanfm emacs ripgrep lxappearance qt5ct dracula-cursors-git && \
+    yay -S alsa-utils qtile qtile-extras-git python-psutil htop kitty gnome-keyring base-devel unzip zip bitwarden arandr zen-browser-bin vim discord blueman flameshot beamerpresenter-git texlive-latexextra bat ispell aspell aspell-en aspell-nb hunspell rofi-wayland ttf-font-awesome-4 noto-fonts-emoji xdotool dracula-gtk-theme dracula-icons-git vifm network-manager-applet adobe-source-code-pro-fonts pacman-contrib doas xautolock lxsession eza lux-git trayer yad git jre-openjdk lightdm lightdm-gtk-greeter light-locker feh zip swww scrot dunst pavucontrol nm-connection-editor neovim libreoffice signal-desktop pipewire pipewire-pulse wireplumber picom pcmanfm emacs ripgrep lxappearance qt5ct dracula-cursors-git && \
 
 rm -rf ~/Scrpit && \
 git clone https://gitlab.com/TobbeBob123/Script.git ~/Script && \
@@ -96,8 +96,6 @@ git clone https://gitlab.com/TobbeBob123/system_sound.git ~/Sound && \
 		 sudo systemctl enable lightdm && \
                  sudo mv ~/lightdm/sleep.target.wants/ /etc/systemd/system/sleep.target.wants/ && \
                  sudo mv ~/lightdm /etc/lightdm && \
-
-echo feh --no-fehbg --bg-scale ~/Bakgrunner/TobbeOS_2.png > ~/.fehbg && \
 
                  touch ~/.xinitrc && echo exec qtile > ~/.xinitrc && \
                  python -m py_compile ~/.config/qtile/config.py && \
